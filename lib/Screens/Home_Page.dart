@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                   gradient: LinearGradient(colors: [
                 weatherdata!.getthemcolor(),
-                weatherdata!.getthemcolor()[300]!,
+                weatherdata!.getthemcolor()[200]!,
                 weatherdata!.getthemcolor()[100]!,
               ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
               child: Column(

@@ -37,11 +37,11 @@ class weathermodel {
     } else if (weatherstatname == 'Heavy Cloudy') {
       return 'assets/images/cloudy.png';
     } else if (weatherstatname == 'Light Rain' ||
-        weatherstatname == 'Heavy Rain' ||
+        weatherstatname == 'Patchy rain possible' ||
         weatherstatname == 'Showers') {
       return 'assets/images/rainy.png';
     } else if (weatherstatname == 'Thunderstorm' ||
-        weatherstatname == 'osama') {
+        weatherstatname == 'nothing') {
       return 'assets/images/thunderstorm.png';
     } else {
       return 'assets/images/clear.png';
@@ -49,8 +49,9 @@ class weathermodel {
   }
 
   MaterialColor getthemcolor() {
-    if (weatherstatname == 'Clear' || weatherstatname == 'Light Cloud') {
-      return Colors.orange;
+    if (weatherstatname == 'Patchy rain possible' ||
+        weatherstatname == 'Light Cloud') {
+      return Colors.blue;
     } else if (weatherstatname == 'Sleet' ||
         weatherstatname == 'Snow' ||
         weatherstatname == 'Hail') {
@@ -62,7 +63,7 @@ class weathermodel {
         weatherstatname == 'Showers') {
       return Colors.blue;
     } else if (weatherstatname == 'Thunderstorm' ||
-        weatherstatname == 'osama') {
+        weatherstatname == 'no thing') {
       return Colors.blue;
     } else {
       return Colors.orange;
